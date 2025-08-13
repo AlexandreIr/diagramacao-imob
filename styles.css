@@ -5,15 +5,28 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.flex-center{
+    display: flex;
+    align-items: center;
+}
+
+.flex-beetween{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .banner{
     width: 100%;
     height: 100vh;
     position: relative;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: url('./public/banner.webp');
     background-size: cover;
     background-position: center;
@@ -23,9 +36,6 @@
 .first{
     width: 100%;
     height: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #0071BC;
     padding-left: 5rem;
     padding-top: .5rem;
@@ -34,23 +44,15 @@
 }
 
 .numbers{
-    display: flex;
-    align-items: center;
     gap: 2rem;
     color: #ffffff7c;
     color: #fff;
 }
 
 .phones{
-    display: flex;
-    align-items: center;
     gap: 2rem;
 }
 
-.phones span{
-    display: flex;
-    align-items: center;
-}
 
 .phone-icon{
     height: 20px;
@@ -67,17 +69,12 @@
 }
 
 .second{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 1rem 5rem;
     width: 100%;
     height: 100px;
 }
 
 .menu{
-    display: flex;
-    align-items: center;
     gap: 1rem;
     color: #0000007c;
 }
@@ -93,8 +90,6 @@
     background-color: #4643437c;
     padding: 1rem 2rem;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
     gap: 1rem;
 }
 .forms input{
@@ -104,9 +99,6 @@
     width: 100%;
 }
 .buy{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     gap: 1rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
@@ -152,15 +144,10 @@
     border: 1px solid #0000007c;
 }
 .buttons{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     gap: 1rem;
 }
 
 .btn-code{
-    display: flex;
-    align-items: center;
     gap: 1rem;
     background-color: #fff;
     padding: .5rem 1rem;
@@ -182,9 +169,6 @@
 }
 
 .head{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     margin-top: 2rem;
 }
@@ -218,9 +202,6 @@
 
 .carroussel{
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .carroussel img{
     width: 100%;
@@ -278,9 +259,6 @@
 
 .venda{
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .slick-prev, .slick-next {
@@ -352,11 +330,6 @@
   padding: 10px 15px;
 }
 
-.pricecode{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .local {
   font-size: 14px;
@@ -400,9 +373,7 @@
 }
 
 .info {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     font-size: 12px;
     
 }
@@ -419,9 +390,6 @@
 
 .funcionamento{
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     padding: 2rem 0;
 }
@@ -447,11 +415,6 @@
     width: 150px;
     height: auto;
 }
-.logo-sec{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .information{
     color:#0000007c;
@@ -472,21 +435,14 @@ footer{
 }
 
 .footer-info{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     gap: 5rem;
     padding: 3rem;
     max-width: 1200px;
 }
 
 .public-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     gap: 2rem;
     padding: 2rem;
-    
 }
 
 .public-info img{
@@ -495,9 +451,6 @@ footer{
 }
 
 .links{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     gap: 1rem;
     
 }
@@ -510,7 +463,7 @@ footer{
     margin-bottom: 2rem;
 }
 
-.phones-contacts-footer img{
+.phones-contacts-footer img , .social-media img{
     width: 20px;
     height: 20px;
 }
@@ -521,15 +474,7 @@ footer{
     gap: 1rem;
 }
 
-.social-media img{
-    width: 20px;
-    height: 20px;
-}
-
 .pos-footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     gap: 5rem;
     padding: 3rem;
 }
@@ -537,5 +482,6 @@ footer{
 hr{
     margin: 0 auto;
     background-color: #948e8e3f;
+    opacity: .1;
     width: 95%;
 }
